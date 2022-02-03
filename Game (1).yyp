@@ -1,12 +1,11 @@
 {
   "resources": [
-    {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":15,},
+    {"id":{"name":"Testing","path":"rooms/Testing/Testing.yy",},"order":0,},
+    {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":1,},
     {"id":{"name":"Barrer","path":"objects/Barrer/Barrer.yy",},"order":2,},
     {"id":{"name":"MBarrer","path":"objects/MBarrer/MBarrer.yy",},"order":1,},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},"order":0,},
-    {"id":{"name":"Object4","path":"objects/Object4/Object4.yy",},"order":16,},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},"order":0,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -22,7 +21,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Testing","path":"rooms/Testing/Testing.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
