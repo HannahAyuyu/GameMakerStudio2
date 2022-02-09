@@ -1,10 +1,12 @@
 {
   "resources": [
+    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
     {"id":{"name":"Player","path":"sprites/Player/Player.yy",},"order":1,},
+    {"id":{"name":"Coin","path":"sprites/Coin/Coin.yy",},"order":3,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":3,},
     {"id":{"name":"HUD","path":"objects/HUD/HUD.yy",},"order":4,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
     {"id":{"name":"Wall","path":"sprites/Wall/Wall.yy",},"order":2,},
+    {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},"order":5,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
   ],
   "Options": [

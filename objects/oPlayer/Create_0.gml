@@ -2,15 +2,9 @@
 global.coins = 0;
 global.points = 0;
 
+//movement vars
 xSpeed = 4;
-
-xDirection = 0;
-
-xVector = xSpeed * xDirection;
+xVector = 0;
 yVector = 0;
-
-//gravity
-grv = .3;
-jumpForce = -10;
-
-yVector = 0;
+jumpForce = -128;
+grv = 3;

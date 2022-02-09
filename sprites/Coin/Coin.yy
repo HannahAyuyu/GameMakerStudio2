@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 31,
-  "bbox_top": 0,
-  "bbox_bottom": 31,
+  "bbox_left": 5,
+  "bbox_right": 26,
+  "bbox_top": 5,
+  "bbox_bottom": 26,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7b5a1036-dadc-4a6a-b854-d9b62eee49f4","path":"sprites/Player/Player.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7b5a1036-dadc-4a6a-b854-d9b62eee49f4","path":"sprites/Player/Player.yy",},"LayerId":{"name":"3bdb4789-7fb2-45fd-9107-8f263df67852","path":"sprites/Player/Player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Player","path":"sprites/Player/Player.yy",},"resourceVersion":"1.0","name":"7b5a1036-dadc-4a6a-b854-d9b62eee49f4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"13243d27-dfb9-426d-bb4e-379b14cf8285","path":"sprites/Coin/Coin.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"13243d27-dfb9-426d-bb4e-379b14cf8285","path":"sprites/Coin/Coin.yy",},"LayerId":{"name":"58f1f2d2-32fb-4d2f-9494-82a7e8ebd324","path":"sprites/Coin/Coin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Coin","path":"sprites/Coin/Coin.yy",},"resourceVersion":"1.0","name":"13243d27-dfb9-426d-bb4e-379b14cf8285","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Player","path":"sprites/Player/Player.yy",},
+    "spriteId": {"name":"Coin","path":"sprites/Coin/Coin.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"506bae10-b6a5-4d98-9e1d-8ee3fd9f1a2d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7b5a1036-dadc-4a6a-b854-d9b62eee49f4","path":"sprites/Player/Player.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fa130e95-6d76-4546-8556-869b514c6245","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"13243d27-dfb9-426d-bb4e-379b14cf8285","path":"sprites/Coin/Coin.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Player","path":"sprites/Player/Player.yy",},
+    "parent": {"name":"Coin","path":"sprites/Coin/Coin.yy",},
     "resourceVersion": "1.3",
-    "name": "Player",
+    "name": "Coin",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3bdb4789-7fb2-45fd-9107-8f263df67852","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"58f1f2d2-32fb-4d2f-9494-82a7e8ebd324","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Player",
+  "name": "Coin",
   "tags": [],
   "resourceType": "GMSprite",
 }

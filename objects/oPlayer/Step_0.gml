@@ -1,39 +1,38 @@
 //Controls
 left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
+jump = keyboard_check_pressed(ord("W"));
 
 //Movement
-xDirection = right - left;
-xVector = xSpeed * xDirection;
-yVector = yVector + grv;
+xVector = xSpeed * (right - left);
 
 //jump
-if(place_meeting(x, y+1, oWall) and (jump))
+if (place_meeting(x, y + 1, oWall) and (jump))
 {
 yVector = jumpForce;
 }
+yVector += grv;
 
-
-x += xVector;
-
-y += yVector;
-
-if(place_meeting(x +xVector, y, oWall))
+//Colision check
+if (place_meeting(x + xVector, y, oWall))
 {
-// ! means "not"
-	while (!place_meeting(x + xDirection, y, oWall))
+//while the player isn't moving into the wall
+	while (!place_meeting(x + sign(xVector), y, oWall))
 	{
 	//move one pixel
-	x += xDirection;
+	x += sign(xVector);
 	}
 	xVector = 0;
 }
+x += xVector;
 
-if(place_meeting(x, y+ yVector, oWall))
+if(place_meeting(x, y + yVector, oWall))
 {
-	while (!place_meeting(x, y+sign(yVector), oWall))
+	while (!place_meeting(x, y + sign(yVector), oWall))
 	{
-	y = y+sign(yVector);
+	y += sign(yVector);
 	}
-	xVector = 0;
+	yVector = 0;
 }
+y += yVector;
+yVector = grv;
