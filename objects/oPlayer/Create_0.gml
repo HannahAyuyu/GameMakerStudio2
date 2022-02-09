@@ -6,5 +6,5 @@ global.points = 0;
 xSpeed = 4;
 xVector = 0;
 yVector = 0;
-jumpForce = -128;
-grv = 3;
+jumpForce = -8; 
+grv = .3;

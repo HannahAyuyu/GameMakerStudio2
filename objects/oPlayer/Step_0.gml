@@ -1,17 +1,16 @@
 //Controls
 left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
-jump = keyboard_check_pressed(ord("W"));
+jump = keyboard_check_pressed(vk_space);
+restrt = keyboard_check_pressed(ord("R"));
 
+if restrt
+room_restart();
 //Movement
 xVector = xSpeed * (right - left);
-
-//jump
-if (place_meeting(x, y + 1, oWall) and (jump))
-{
-yVector = jumpForce;
-}
 yVector += grv;
+
+
 
 //Colision check
 if (place_meeting(x + xVector, y, oWall))
@@ -35,4 +34,9 @@ if(place_meeting(x, y + yVector, oWall))
 	yVector = 0;
 }
 y += yVector;
-yVector = grv;
+
+//jump
+if (place_meeting(x, y + 1, oWall) and (jump))
+{
+yVector = jumpForce;
+}
