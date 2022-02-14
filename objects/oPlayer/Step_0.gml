@@ -1,15 +1,16 @@
+/// @descr Controls, Movement, Colision
 //Controls
 left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
 jump = keyboard_check_pressed(vk_space);
-restrt = keyboard_check_pressed(ord("R"));
+restart = keyboard_check_pressed(ord("R"));
 
-if restrt
+if restart
 room_restart();
+
 //Movement
 xVector = xSpeed * (right - left);
 yVector += grv;
-
 
 
 //Colision check
@@ -35,8 +36,18 @@ if(place_meeting(x, y + yVector, oWall))
 }
 y += yVector;
 
+
 //jump
 if (place_meeting(x, y + 1, oWall) and (jump))
 {
 yVector = jumpForce;
 }
+
+
+//Die In Pit
+if (y>=room_height)
+{
+room_restart()
+}
+
+

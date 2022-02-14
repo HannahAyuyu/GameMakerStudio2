@@ -1,3 +1,5 @@
+/// @desc Number stuff things.
+
 //global variables
 global.coins = 0;
 global.points = 0;
