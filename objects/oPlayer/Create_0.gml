@@ -4,6 +4,7 @@
 global.coins = 0;
 global.points = 0;
 
+
 //movement vars
 xSpeed = 4;
 xVector = 0;
