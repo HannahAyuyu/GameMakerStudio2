@@ -27,7 +27,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Text",
+  "name": "Text_Room_One",
   "tags": [],
   "resourceType": "GMObject",
 }
