@@ -20,7 +20,7 @@ if (place_meeting(x + xVector, y, oWall))
 	while (!place_meeting(x + sign(xVector), y, oWall))
 	{
 	//move one pixel
-	x += sign(xVector);
+		x += sign(xVector);
 	}
 	xVector = 0;
 }
@@ -30,7 +30,7 @@ if(place_meeting(x, y + yVector, oWall))
 {
 	while (!place_meeting(x, y + sign(yVector), oWall))
 	{
-	y += sign(yVector);
+		y += sign(yVector);
 	}
 	yVector = 0;
 }
@@ -40,14 +40,14 @@ y += yVector;
 //jump
 if (place_meeting(x, y + 1, oWall) and (jump))
 {
-yVector = jumpForce;
+	yVector = jumpForce;
 }
 
 
 //Die In Pit
 if (y>=room_height)
 {
-room_restart()
+	room_restart();
 }
 
 
